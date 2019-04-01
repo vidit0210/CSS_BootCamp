@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            color:blue;
+            background:whitesmoke;
+        }
+        section p{
+            color:palegoldenrod;
+        }
+        section > p {
+            color:rebeccapurple;
+        }
+        h1 +p{
+            color: aqua;
+        }
+        h1 ~ p{
+            color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <label for="Name">Ente Name</label>
+    <input type="text" name="name" id="name" placeholder="John" required>
+    <section>
+    <p>Change</p>
+    <p>Change</p>
+    <p>Change</p>
+    <h1>Header</h1>
+    <p>Change</p>
+    <p>Change</p>
+    <div>
+        <p>Nested</p>
+    </div>
+    <p>Change</p>
+</section>
+</body>
+</html>
