@@ -1,5 +1,5 @@
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
     box-sizing: border-box;
 }
 
@@ -7,4 +7,108 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat',sans-serif;
+}
+.sidebar{
+    width:8rem;
+    height: 100%;
+    background-color: #eee;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* as Direction is CrossAxis Now */
+    align-items: center;
+}
+.menu-icon{
+    /* height: 2rem;
+    width: 2rem;
+    background-color: #222; */
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.line{
+    height: .2rem;
+    width: 2.5rem;
+    background-color: #222;
+    margin-bottom: 0.6rem;
+}
+.line-1, .line-3{
+    width:1.8rem;
+    transition: width .3s;
+}
+.menu-icon:hover .line{
+    width:2.5rem;
+}
+.social-icon-list{
+    list-style: none;
+    padding: none;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-link{
+    color: #777;
+    font-size: 2rem;
+    transition: color .3s;
+}
+.social-link:hover{
+    color: #deaa86;
+}
+.year{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #555;
+}
+.navigation-search{
+    position: relative;
+}
+.navigation{
+    margin-left: 8rem;
+    position: fixed;
+    width:40rem;
+    height: 100%;
+    background:linear-gradient(to top,rgba(34,32,41,.1),rgba(34,32,41,.8)), url("img/nav-bg.jpeg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-heading{
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 3.5rem;
+    font-weight:300;
+    letter-spacing: 0.2rem;
+    color: #deaa86;
+    text-align: center;
+}
+.navigation-search-input{
+    width: 30rem;
+    padding: 1rem 2rem;
+    background-color: rgba(0,0,0,0.3);
+    font-family: 'Josefin Sans',sans-serif;
+    color: #deaa86;
+    letter-spacing: .3rem;
+    outline: none;
+    border:.1rem solid #555;
+    border-radius: 10rem;
+}
+.navigation-search-input:focus{
+    background-color: rgba(0,0,0,0.1);
+}
+.navigation-search-btn{
+    border:none;
+    background-color: transparent;
+    color: #deaa86;
+    font-size: 1.7rem;
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.navigation-search-btn:focus{
+    outline: none;
 }
